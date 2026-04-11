@@ -1,6 +1,7 @@
 import "./globals.css";
 import hotelData from "@/config/hotelData";
 import StructuredData from "@/components/StructuredData";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: `${hotelData.name} | Accommodation in Kimberley`,
