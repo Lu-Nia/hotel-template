@@ -85,7 +85,7 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Quick Links */}
+          {/* Social Media */}
           <div>
             <h4 style={{
               fontFamily: "var(--font-body)",
@@ -96,31 +96,66 @@ export default function Footer() {
               color: "var(--primary)",
               marginBottom: "1.25rem",
             }}>
-              Quick Links
+              Follow Us
             </h4>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-              {navLinks.map((link) => (
-                <li key={link.href} style={{ marginBottom: "0.65rem" }}>
-                  
-                    <a href={link.href}
-                    style={{
-                      fontFamily: "var(--font-body)",
-                      fontSize: "0.88rem",
-                      color: "rgba(255,255,255,0.55)",
-                      textDecoration: "none",
-                      transition: "color 0.2s ease",
-                      display: "inline-flex",
-                      alignItems: "center",
-                      gap: "0.4rem",
-                    }}
-                    onMouseEnter={(e) => e.currentTarget.style.color = "var(--primary)"}
-                    onMouseLeave={(e) => e.currentTarget.style.color = "rgba(255,255,255,0.55)"}
-                  >
-                    {link.label}
-                  </a>
-                </li>
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+              {hotelData.socials.map(({ platform, url }) => (
+                <a
+                  key={platform}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "0.75rem",
+                    textDecoration: "none",
+                    color: "rgba(255,255,255,0.55)",
+                    fontFamily: "var(--font-body)",
+                    fontSize: "0.88rem",
+                    transition: "color 0.2s ease",
+                  }}
+                  onMouseEnter={(e) => e.currentTarget.style.color = "var(--primary)"}
+                  onMouseLeave={(e) => e.currentTarget.style.color = "rgba(255,255,255,0.55)"}
+                >
+                  {/* Icon Box */}
+                  <div style={{
+                    width: "32px",
+                    height: "32px",
+                    borderRadius: "6px",
+                    backgroundColor: "rgba(255,255,255,0.06)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexShrink: 0,
+                  }}>
+                    {platform === "Facebook" && (
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                      </svg>
+                    )}
+                    {platform === "Instagram" && (
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                      </svg>
+                    )}
+                    {platform === "TikTok" && (
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/>
+                      </svg>
+                    )}
+                    {platform === "X" && (
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                      </svg>
+                    )}
+                  </div>
+                  {platform}
+                </a>
               ))}
-            </ul>
+            </div>
           </div>
 
           {/* Contact Column */}

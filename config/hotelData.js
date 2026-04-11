@@ -85,6 +85,14 @@ const hotelData = {
     title: "Weekend Special 🎉",
     description: "Stay 2 nights, get 15% off. Every Friday to Sunday.",
   },
+  // ── Social Media ──────────────────────────────────────
+  socials: [
+    { platform: "Facebook", url: "https://web.facebook.com/tumelo.reiners.1" },
+    { platform: "Instagram", url: "https://www.instagram.com/faith_lunia/" },
+    //{ platform: "TikTok", url: "https://tiktok.com/@sunriseguesthouse" },
+    { platform: "X", url: "https://x.com/reiners_tu94328" },
+  ],
 };
+
 
 export default hotelData;
