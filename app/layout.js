@@ -2,6 +2,7 @@ import "./globals.css";
 import hotelData from "@/config/hotelData";
 import StructuredData from "@/components/StructuredData";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
   title: `${hotelData.name} | Accommodation in Kimberley`,
@@ -73,8 +74,8 @@ export default function RootLayout({ children }) {
         />
         <StructuredData />
         <meta name="google-site-verification" content="ek9EgpCg4OwT3GDzV_Q3yUsHvn3Au4hpgUKfnoTZRRI" />
-
-
+        <GoogleAnalytics gaId="G-EBT4PW6LK1" />
+        <Analytics />
         
       </head>
       <body>{children}</body>

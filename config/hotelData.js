@@ -8,7 +8,7 @@ const hotelData = {
   // ── Contact ───────────────────────────────────────────
   phone: "+27 71 090 2591",
   email: "reinerstumelo@gmail.com",
-  address: "9 Scanlana Street, Kimberley North, Kimberley, South Africa",
+  address: "9 Scanlan Street, Kimberley North, Kimberley, South Africa",
   businessHours: "Monday – Sunday: 7:00 AM – 10:00 PM",
   whatsapp: "27710902591", // 27 + number, no spaces or +
 

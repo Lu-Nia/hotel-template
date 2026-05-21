@@ -1,0 +1,198 @@
+
+<h2 class="sr-only">Hotel template feature overview</h2>
+
+<style>
+  .wrap { font-family: var(--font-sans); padding: 1rem 0; }
+  .section { margin-bottom: 2rem; }
+  .section-title {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+    margin: 0 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 0.5px solid var(--color-border-tertiary);
+  }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
+  .card {
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: var(--border-radius-lg);
+    padding: 14px 16px;
+  }
+  .card-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin: 0 0 4px;
+  }
+  .card-desc {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    margin: 0;
+    line-height: 1.5;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: var(--border-radius-md);
+    margin-bottom: 8px;
+  }
+  .badge-teal { background: #E1F5EE; color: #0F6E56; }
+  .badge-purple { background: #EEEDFE; color: #3C3489; }
+  .badge-amber { background: #FAEEDA; color: #854F0B; }
+  .badge-blue { background: #E6F1FB; color: #0C447C; }
+  .badge-coral { background: #FAECE7; color: #993C1D; }
+</style>
+
+<div class="wrap">
+
+  <div class="section">
+    <p class="section-title">Pages & Structure</p>
+    <div class="grid">
+      <div class="card">
+        <span class="badge badge-teal">Hero</span>
+        <p class="card-label">Home / Landing</p>
+        <p class="card-desc">Full-screen hero with hotel name, tagline, animated entrance, specials banner and dual CTA buttons</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-teal">About</span>
+        <p class="card-label">About Section</p>
+        <p class="card-desc">Two-column layout with hotel description, image, floating stat card and highlights grid</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-teal">Rooms</span>
+        <p class="card-label">Rooms Section</p>
+        <p class="card-desc">Room cards with image, price badge, description, feature checklist and per-room WhatsApp booking</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-teal">Gallery</span>
+        <p class="card-label">Gallery Section</p>
+        <p class="card-desc">6-image grid with hover overlays and a full lightbox viewer with arrow navigation</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-teal">Reviews</span>
+        <p class="card-label">Testimonials</p>
+        <p class="card-desc">Auto-rotating featured review, star ratings, dot indicators and clickable review cards</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-teal">Contact</span>
+        <p class="card-label">Contact Section</p>
+        <p class="card-desc">Contact info cards, enquiry form with date validation, WhatsApp redirect and Google Maps embed</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-title">Navigation & Global UI</p>
+    <div class="grid">
+      <div class="card">
+        <span class="badge badge-purple">Navbar</span>
+        <p class="card-label">Smart Navbar</p>
+        <p class="card-desc">Transparent on load, turns solid on scroll. Desktop links + mobile hamburger menu with smooth open/close</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-purple">WhatsApp</span>
+        <p class="card-label">Floating Button</p>
+        <p class="card-desc">Fixed green WhatsApp button appears after scrolling 300px with a pulse ring animation for 6 seconds</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-purple">Footer</span>
+        <p class="card-label">4-Column Footer</p>
+        <p class="card-desc">Brand column, social media links, contact details, business hours and specials reminder card</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-title">Booking & Conversion Features</p>
+    <div class="grid">
+      <div class="card">
+        <span class="badge badge-amber">Booking</span>
+        <p class="card-label">WhatsApp Booking</p>
+        <p class="card-desc">Every CTA pre-fills a WhatsApp message with hotel name and room details — zero friction for the guest</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-amber">Enquiry</span>
+        <p class="card-label">Smart Enquiry Form</p>
+        <p class="card-desc">Name, phone, check-in/out dates with validation (no invalid date ranges), and custom message</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-amber">Specials</span>
+        <p class="card-label">Specials Banner</p>
+        <p class="card-desc">Toggle on/off via config. Shows on hero and in footer. One line to update the deal copy</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-amber">Maps</span>
+        <p class="card-label">Google Maps</p>
+        <p class="card-desc">Embedded interactive map in the contact section so guests can find the hotel instantly</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-title">Animations & UX</p>
+    <div class="grid">
+      <div class="card">
+        <span class="badge badge-blue">Scroll</span>
+        <p class="card-label">Scroll Animations</p>
+        <p class="card-desc">Every section fades and slides in using IntersectionObserver — no animation library needed</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-blue">Hero</span>
+        <p class="card-label">Hero Entrance</p>
+        <p class="card-desc">Staggered fade-in for each element, Ken Burns image zoom, animated gold divider line</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-blue">Hover</span>
+        <p class="card-label">Hover Effects</p>
+        <p class="card-desc">Room image zoom, gallery overlay reveal, nav link color shift, contact card shadow lift</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-blue">Lightbox</span>
+        <p class="card-label">Gallery Lightbox</p>
+        <p class="card-desc">Click any photo to open fullscreen. Arrow keys + keyboard Escape supported. Shows photo counter</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-title">Technical & Developer Features</p>
+    <div class="grid">
+      <div class="card">
+        <span class="badge badge-coral">Config</span>
+        <p class="card-label">hotelData.js</p>
+        <p class="card-desc">Single file controls all content — name, rooms, phone, WhatsApp, highlights, testimonials, specials</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-coral">Theme</span>
+        <p class="card-label">theme.js</p>
+        <p class="card-desc">Two variables control the entire colour scheme — swap primary and secondary to rebrand in seconds</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-coral">Stack</span>
+        <p class="card-label">Next.js + Tailwind</p>
+        <p class="card-desc">Static-exportable, fast, SEO-ready. Hosted free on Vercel with auto-deploy on every git push</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-coral">SEO</span>
+        <p class="card-label">SEO Ready</p>
+        <p class="card-desc">Meta tags, Open Graph, JSON-LD structured data, sitemap.xml, robots.txt and favicon all configured</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-coral">Mobile</span>
+        <p class="card-label">Fully Responsive</p>
+        <p class="card-desc">Every section adapts to mobile. Navbar collapses to hamburger. Grid layouts reflow automatically</p>
+      </div>
+      <div class="card">
+        <span class="badge badge-coral">Social</span>
+        <p class="card-label">Social Media Links</p>
+        <p class="card-desc">Facebook, Instagram, TikTok and X icons in the footer — all configurable per client in hotelData</p>
+      </div>
+    </div>
+  </div>
+
+</div>
