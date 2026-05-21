@@ -74,11 +74,12 @@ export default function RootLayout({ children }) {
         />
         <StructuredData />
         <meta name="google-site-verification" content="ek9EgpCg4OwT3GDzV_Q3yUsHvn3Au4hpgUKfnoTZRRI" />
-        <GoogleAnalytics gaId="G-EBT4PW6LK1" />
+        
         <Analytics />
         
       </head>
       <body>{children}</body>
+      <GoogleAnalytics gaId="G-EBT4PW6LK1" />
     </html>
   );
 }
