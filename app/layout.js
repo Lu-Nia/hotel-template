@@ -2,6 +2,7 @@ import "./globals.css";
 import hotelData from "@/config/hotelData";
 import StructuredData from "@/components/StructuredData";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
@@ -78,7 +79,10 @@ export default function RootLayout({ children }) {
         <Analytics />
         
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
       <GoogleAnalytics gaId="G-EBT4PW6LK1" />
     </html>
   );
