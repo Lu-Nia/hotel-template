@@ -35,6 +35,7 @@ const hotelData = {
       description:
         "A cozy, well-furnished room perfect for solo travellers or couples on a budget.",
       image: "/images/rooms/standard.jpg",
+      features: ["Free WiFi", "Air Conditioning", "Private Bathroom"],
     },
     {
       id: 2,
@@ -43,6 +44,7 @@ const hotelData = {
       description:
         "Spacious room with a king-size bed, en-suite bathroom, and garden view.",
       image: "/images/rooms/deluxe.jpg",
+      features: ["Free WiFi", "Air Conditioning", "Private Bathroom", "Balcony"],
     },
     {
       id: 3,
@@ -51,6 +53,7 @@ const hotelData = {
       description:
         "Perfect for families. Includes two bedrooms, a lounge area, and a kitchenette.",
       image: "/images/rooms/suite.jpg",
+      features: ["Free WiFi", "Air Conditioning", "Private Bathroom", "Balcony"],
     },
   ],
 

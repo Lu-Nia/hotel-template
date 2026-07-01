@@ -153,8 +153,8 @@ export default function RoomsSection() {
                   gap: "0.4rem",
                   marginBottom: "1.5rem",
                 }}>
-                  {["Free WiFi included", "Daily housekeeping", "En-suite bathroom"].map((feature) => (
-                    <div key={feature} style={{
+                    {room.features.map((feature) => (
+                      <div key={feature} style={{
                       display: "flex",
                       alignItems: "center",
                       gap: "0.5rem",
