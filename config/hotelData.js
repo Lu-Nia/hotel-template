@@ -6,11 +6,11 @@ const hotelData = {
     "EzReiners Guesthouse offers warm, affordable accommodation with a personal touch. Whether you're here for business or leisure, we make you feel at home.",
 
   // ── Contact ───────────────────────────────────────────
-  phone: "+27 71 090 2591",
+  phone: "+27 60 266 3334",
   email: "reinerstumelo@gmail.com",
-  address: "9 Scanlan Street, Kimberley North, Kimberley, South Africa",
+  address: "Kimberley North, Kimberley, South Africa",
   businessHours: "Monday – Sunday: 7:00 AM – 10:00 PM",
-  whatsapp: "27710902591", // 27 + number, no spaces or +
+  whatsapp: "27602663334", // 27 + number, no spaces or +
 
   // ── Google Maps ───────────────────────────────────────
   mapEmbedUrl:
